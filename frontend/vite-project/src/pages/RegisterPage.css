@@ -1,0 +1,96 @@
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('../assets/register.jpg') no-repeat center center/cover;
+  margin: 0; /* Remove default margins from body */
+}
+
+.register-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Add margin below heading */
+}
+
+.register-header {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold; /* Make labels bold */
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #007bff; /* Change border color on focus */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 15px; /* Add space above button */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darken on hover */
+}
+
+button:disabled {
+  background-color: #aaa; /* Change disabled button color */
+  cursor: not-allowed;
+}
+
+/* Media Query for smaller devices */
+@media only screen and (max-width: 600px) {
+  .register-container {
+    padding: 15px;
+  }
+
+  .register-header {
+    font-size: 24px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
